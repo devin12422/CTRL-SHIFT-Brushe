@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" href="/images/brushIcon.png">
+
+  <title>Brushe</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/index.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:300,700' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+  <div id="nav">
+    <div class="navBlock" id="moreNav" onClick="moreOpening();">
+      <a href="#">
+        <img src="/images/burgerIcon.png" alt="">
+        <p>More</p>
+        <div></div>
+      </a>
+    </div>
+    <div class="navBlock">
+      <a href="/html/home.html">
+        <img src="/images/homeIcon.png" alt="">
+        <p>Home</p>
+        <div></div>
+      </a>
+    </div>
+    <div class="navBlock">
+      <a href="https://horizon-tobacco-9966.codio.io/">
+        <img src="/images/brushIcon.png" alt="">
+        <p>Create</p>
+        <div></div>
+      </a>
+    </div>
+    <div class="navBlock extendedNav">
+      <a href="/html/about.html">
+        <img src="/images/infoIcon.png" alt="">
+        <p>About</p>
+        <div></div>
+      </a>
+    </div>
+    <div class="navBlock extendedNav">
+      <a href="/html/contact.html">
+        <img src="/images/contactIcon.png" alt="">
+        <p>Contact</p>
+        <div></div>
+      </a>
+    </div>
+    <div class="navBlock extendedNav">
+      <a href="/html/gallery.html">
+        <img src="/images/galleryIcon.png" alt="">
+        <p>Gallery</p>
+        <div></div>
+      </a>
+    </div>
+  </div>
+  <div class="seed-container">
+    <form action="javascript:;" onsubmit="return createBrushe()">
+      <label for="file" class="fileLabel">
+        <p class="fileLabel">Upload File</p>
+      </label>
+      <input required novalidate type="file" accept="image/*" name="image" id="file" onchange="loadImage(event)">
+      <input type="submit">
+    </form>
+    <p>Upload a photo to see what it would be like if it was repainted.</p>
+    <div>seed – <span class="seed-text">12380</span>
+    </div>
+
+  </div>
+
+  <canvas id="brusheCanvas" class="noselect"></canvas>
+  <script src="bundle.js"></script>
+  <script src="config.js"></script>
+</body>
+
+</html>
