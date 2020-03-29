@@ -43,7 +43,7 @@ function moreOpening() {
   }
 
   function update() {
-    ctx.fillStyle = "#2a5298";
+    ctx.fillStyle = "#85D8CE";
     ctx.globalCompositeOperation = "source-over";
     ctx.fillRect(0, 0, cvs.width, cvs.height);
     ctx.globalCompositeOperation = "screen";
