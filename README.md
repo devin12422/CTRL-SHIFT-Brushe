@@ -1,2 +1,2 @@
 # CTRL-SHIFT-Brushe
-As of right now, the functionality part of the project is not complete as I was having trouble running the nodejs in codio due to errors involving browserify and budo not working and not allowing my project to run, however the rest of the site is fine. The dynamic page currently does not work.
+Generative art based on color in pixels which creates a noisemap, allowing it to create lineism art out of your pictures.

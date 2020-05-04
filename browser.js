@@ -15,7 +15,7 @@ var seedContainer = document.querySelector('.seed-container');
 var seedText = document.querySelector('.seed-text');
 window.addEventListener('resize', resize);
 document.body.style.margin = '0';
-document.body.style.overflow = 'hidden';
+// document.body.style.overflow = 'hidden';
 var randomize = (ev) => {
   if (ev) ev.preventDefault();
   reload(createConfig());
@@ -44,6 +44,7 @@ function reload (config) {
   var pixelRatio = typeof opts.pixelRatio === 'number' ? opts.pixelRatio : 1;
   canvas.width = opts.width * pixelRatio;
   canvas.height = opts.height * pixelRatio;
+  canvas.style.marginBottom = "10vh";
 
   seedText.textContent = opts.seedName;
 
