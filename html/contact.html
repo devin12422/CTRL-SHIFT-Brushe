@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,62 +15,74 @@
       <div class="navBlock" id="moreNav" onClick="moreOpening();">
         <a href="#">
           <img src="/images/burgerIcon.png" alt="">
-          <p>More</p>
-          <div></div>
         </a>
       </div>
-      <div class="navBlock">
+      <div class="navBlock extendedNav">
         <a href="/html/home.html">
           <img src="/images/homeIcon.png" alt="">
-          <p>Home</p>
-          <div></div>
         </a>
       </div>
-      <div class="navBlock">
+      <div class="navBlock extendedNav">
         <a href="https://horizon-tobacco-9966.codio.io/">
           <img src="/images/brushIcon.png" alt="">
-          <p>Create</p>
-          <div></div>
         </a>
       </div>
       <div class="navBlock extendedNav">
         <a href="/html/about.html">
           <img src="/images/infoIcon.png" alt="">
-          <p>About</p>
-          <div></div>
         </a>
       </div>
       <div class="navBlock extendedNav">
         <a href="/html/contact.html">
           <img src="/images/contactIcon.png" alt="">
-          <p>Contact</p>
-          <div></div>
         </a>
       </div>
       <div class="navBlock extendedNav">
         <a href="/html/gallery.html">
           <img src="/images/galleryIcon.png" alt="">
-          <p>Gallery</p>
-          <div></div>
         </a>
       </div>
     </div>
-    <form id="contact">
-      <h1>Contact Us</h1>
+    <div id="contactDiv">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+      <script src="https://www.vantajs.com/dist/vanta.trunk.min.js"></script>
+      <div id="bubble"></div>
+      <script>
+        VANTA.TRUNK({
+          el: "#bubble",
+          mouseControls: true,
+          touchControls: true,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xffffff,
+          backgroundColor: 0x000000,
+          spacing: 5.00,
+          chaos: 3.50
+        })
+      </script>
 
-      <label>
-        <input type="text" placeholder="Email Address" />
-      </label>
-      <label>
-        <input type="text" placeholder="Name" />
-      </label>
-      <label>
-        <input id="message" type="text" placeholder="Message...">
-      </label>
-      <label>
-        <input type="submit">
-      </label>
-    </form>
+
+      <form id="contact">
+        <h1>Contact Us</h1>
+
+        <label>
+          <input type="text" placeholder="Email Address" />
+        </label>
+        <label>
+          <input type="text" placeholder="Name" />
+        </label>
+        <label>
+          <input id="message" type="text" placeholder="Message...">
+        </label>
+        <label>
+          <input type="submit">
+        </label>
+      </form>
+    </div>
+
   </div>
   <div id="footerOverlay">
     <div><a href="/html/home.html">Home</a>

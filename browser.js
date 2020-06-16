@@ -1,38 +1,46 @@
 require('fastclick')(document.body);
-
 var assign = require('object-assign');
 var createConfig = require('./config');
 var createRenderer = require('./lib/createRenderer');
 var createLoop = require('raf-loop');
 var contrast = require('wcag-contrast');
-
 var canvas = document.querySelector('#brusheCanvas');
+var fileUpload = document.querySelector('#file');
+const form = document.getElementById('brusheForm');
+const imagePreview = document.getElementById("imagePreview");
 var background = new window.Image();
 var context = canvas.getContext('2d');
-
 var loop = createLoop();
+var imageSrc;
 var seedContainer = document.querySelector('.seed-container');
 var seedText = document.querySelector('.seed-text');
 window.addEventListener('resize', resize);
 document.body.style.margin = '0';
-// document.body.style.overflow = 'hidden';
 var randomize = (ev) => {
   if (ev) ev.preventDefault();
   reload(createConfig());
 };
 randomize();
 resize();
+function submitBrushe(event){
+  randomize(event);``
+}
+function change(event){
 
-const addEvents = (element) => {
-  element.addEventListener('mousedown', (ev) => {
-    if (ev.button === 0) {
-//       randomize(ev); THIS STARTS A NEW PAINTING
-      randomize(ev); 
-    }
-  });
-  element.addEventListener('touchstart', randomize);
-};
+  const file = fileUpload.files[0];
+  const reader = new FileReader();
 
+  reader.addEventListener("load", function () {
+    imagePreview.src = reader.result;
+    imageSrc = reader.result;
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+}
+form.addEventListener('submit', submitBrushe);
+fileUpload.addEventListener('change', change);
 function reload (config) {
   loop.removeAllListeners('tick');
   loop.stop();
@@ -45,9 +53,7 @@ function reload (config) {
   canvas.width = opts.width * pixelRatio;
   canvas.height = opts.height * pixelRatio;
   canvas.style.marginBottom = "10vh";
-
   seedText.textContent = opts.seedName;
-
   background.onload = () => {
     var renderer = createRenderer(opts);
 
@@ -66,15 +72,15 @@ function reload (config) {
       loop.start();
     }
   };
-
-  background.src = config.backgroundSrc;
+  if(imageSrc != null){
+    background.src = imageSrc;
+  } else{
+    background.src = config.backgroundSrc;
+  }
 }
-
 function resize () {
   letterbox(canvas, [ window.innerWidth, window.innerHeight ]);
 }
-
-
 function letterbox (element, parent) {
   var aspect = element.width / element.height;
   var pwidth = parent[0]*.85;
@@ -83,7 +89,6 @@ function letterbox (element, parent) {
   var width = pwidth;
   var height = Math.round(width / aspect);
   var y = Math.floor(pheight - height) / 2;
-
   element.style.top = y + 'px';
   element.style.width = width + 'px';
   element.style.height = height + 'px';

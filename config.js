@@ -3,10 +3,6 @@ var palettes = require('./lib/color-palettes.json');
 var createRandomRange = require('./lib/random-range');
 var imageBase;
 var mapSrc = 'maps/architecture.jpg';
-
-var loadImage = function(event) {
-	mapSrc = URL.createObjectURL(event.target.files[0]);
-};
 module.exports = function(seed) {
   if(typeof seed === 'undefined') {
     seed = String(Math.floor(Math.random() * 1000000));
@@ -15,7 +11,6 @@ module.exports = function(seed) {
   var randomFunc = seedRandom(seed);
   var random = createRandomRange(randomFunc);
   return {
-    // rendering options
     random: randomFunc,
     seedName: seed,
     pointilism: random(0, 0.1),
