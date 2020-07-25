@@ -58,31 +58,25 @@
         <div id="formSliders">
           <li>
             <p>Start Area</p>
-            0.5
-            <input type="range" min="0.50" max="3.00" value="1.00" step="0.1" class="slider" id="startArea">3
-          </li>
-          <li>
-            <p>Total Steps</p>
-            200
-            <input type="range" min="200" max="1000" value="600" step="10" class="slider" id="steps">1000
-          </li>
-          <li>
-            <p>Noise Scale</p>
             0.1
-            <input type="range" min="0.1" max="4" value="2" step="0.1" class="slider" id="scale">4
-            <!--Divide this value by 10000-->
+            <input type="range" min="0.10" max="10.00" value="1.00" step="0.1" class="slider" id="startArea">10
+          </li>
+          <li>
+            <p>Noise Scalar</p>
+            0.0002<input type="range" min="0.0002" max="0.004" value="0.002" step="0.0001" class="slider" id="scale">0.004
           </li>
           <li>
             <p>Count</p>
-            500
-            <input type="range" min="500" max="5000" value="1500" step="100" class="slider" id="count">5000
+            100
+            <input type="range" min="100" max="10000" value="5000" step="100" class="slider" id="count">10000
           </li>
+          
           <li>
             <p>Background Color</p>
             <input value="#ffffff" type="color" class="rendererColors">
           </li>
           <li>
-            <p>Color Pallette</p>
+            <p>Color Palette</p>
             <input value="#ff0000" type="color" class="rendererColors">
             <input value="#0000ff" type="color" class="rendererColors">
             <input value="#000000" type="color" class="rendererColors">
