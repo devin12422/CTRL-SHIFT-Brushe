@@ -1,29 +1,30 @@
  #strokeContainer {
-  width: 80vw;
-  height: 75vh;
-  background:linear-gradient(-34deg, #4BC0C8, #C779D0, #FEAC5E);
-  animation: gradient 15s ease infinite;
-  margin-top: 10vh;
-  background-size: 400% 400%;
-  border-radius: 16px;
-  padding-top: 16px;
-}
-#strokeContainer h1 {
-  position:absolute;
-  z-index:1;
-  top:20vh;
-  font-size:42px;
-  background: -webkit-linear-gradient(-53deg, #1a2a6c, #b21f1f, #fdbb2d);
-  -webkit-background-clip: text;
-  animation: gradient 5s ease infinite;
-  background-size: 400% 400%;
-  color:transparent;
-  left:35vw;
-}
-#strokeContainer img {
-  width:60vw;
-  pointer-events: none;
-  position:absolute;
-  left:20vw;
-  z-index: 0;
-}
+   width: 80vw;
+   height: 75vh;
+   z-index:2;
+   position:relative;
+   background:linear-gradient(-34deg, #4BC0C8, #C779D0, #FEAC5E);
+   animation: gradient 15s ease infinite;
+   margin-top: 10vh;
+   background-size: 400% 400%;
+   border-radius: 16px;
+   padding-top: 16px;
+ }
+ #strokeContainer h1 {
+   position:relative;
+   display:block;
+   z-index:1;
+   top:12vh;
+   font-size:42px;
+   background: -webkit-linear-gradient(-53deg, #1a2a6c, #b21f1f, #fdbb2d);
+   -webkit-background-clip: text;
+   animation: gradient 5s ease infinite;
+   background-size: 400% 400%;
+   color:transparent;
+ }
+ #strokeContainer img {
+   width:60vw;
+   pointer-events: none;
+   position:relative;
+   z-index: 0;
+ }

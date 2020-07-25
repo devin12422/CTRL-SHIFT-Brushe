@@ -25,12 +25,12 @@ input[type="submit"] {
 .seed-container {
   cursor: auto;
   position:absolute;
+  z-index:3;
   top:0px;
   right:10px;
   color: #255C69;
   font-weight: 200;
   width:25vw;
-  /*   float:right; */
   background-color:#E0E5EC;
   margin-bottom:5vh;
   display:inline-block;
@@ -55,13 +55,15 @@ input[type="submit"] {
   -webkit-user-select: none;
   height:25%;
   width:50%;
+  z-index:2;
+  position:relative;
   border-radius:16px;
 }
 .seed-text {
   font-weight: 700;
 }
 #imagePreview {
-  height:256px;
+  width:50%;
 }
 #formSliders li {
   list-style:none;

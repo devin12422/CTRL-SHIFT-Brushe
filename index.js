@@ -6,9 +6,6 @@ function moreOpening() {
     var i;
     for(i = 0; i < document.getElementsByClassName("extendedNav").length; i++) {
       document.getElementsByClassName("extendedNav")[i].style.display = "none";
-//       var navItem = document.getElementsByClassName("extendedNav")[i];
-//       navItem.classList.remove("extendedNav");
-//       navItem.classList.add("extendedNav");
     }
   } else {
     var i;

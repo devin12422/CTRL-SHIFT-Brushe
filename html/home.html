@@ -6,10 +6,11 @@
   <title>Brushe</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/aos.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
   <script src="/index.js"></script>
+  <script src="/aos.js"></script>
 </head>
 
 <body>
@@ -71,19 +72,19 @@
   <div id="cta">
     <div id="ctaGrid">
       <div class="materialBlockRow">
-        <div class="materialBlock">
+        <div data-aos="fromLeft" class="materialBlock">
           <h1>Abstract Art is</h1>
         </div>
-        <div class="materialBlock"></div>
+        <div data-aos="fromRight" class="materialBlock"></div>
       </div>
       <div class="materialBlockRow">
-        <div class="materialBlock"></div>
-        <div class="materialBlock">
+        <div data-aos="fromLeft" class="materialBlock"></div>
+        <div data-aos="fromRight" class="materialBlock">
           <p>Art that doesn't represent reality, but seeks to copy it using shapes, forms, colors, and textures. Abstract art uses visual language of shape, form, color and line to create a piece which exists with a independence from the world.</p>
         </div>
       </div>
       <div class="materialBlockRow">
-        <div class="materialBlock">
+        <div data-aos="fromBottom" class="materialBlock">
           <a href="https://horizon-tobacco-9966.codio.io/">
             <button>
               Make Your Own Masterpiece
@@ -94,41 +95,35 @@
     </div>
   </div>
   <div id="homeDesc">
-    <div id="homeDescGrid">
+    <div id="homeDescContainer">
       <div>
-        <h1>It's not rocket science.</h1>
+        <h1>It's not rocket science, it's computer science</h1>
         <p>With Brushe, you can easily convert photos to images that are a different form of art, which lets you get more out of your photos. All you need to do is get your image in a readable format and then upload it onto our page, where it will be rendered in real time while you watch. Not only is the end result a nice painting, the real time rendering creates a spectacle for you to watch while you wait for the final product. Whether you post them to your social media, or just want nice things to look at, you can always get more with Brushe.</p>
       </div>
-
-      <img src="/images/homePhotographer.jpg" alt="An image of a person with a camera">
-
-    </div>
-  </div>
-  <div id="miniGallery">
-    <h1>Mini-Gallery</h1>
-    <p>You can look at more on the gallery page</p>
-    <div>
-      <img src="/images/gallery/apartment2.png" alt="">
-      <img src="/images/gallery/picture3.png" alt="">
-      <img src="/images/gallery/picture2.png" alt="">
-      <img src="/images/gallery/picture6.png" alt="">
+      <div id="comparison">
+        <img src="/images/homePhotographer.jpg" alt="An image of a person with a camera">
+        <img>
+      </div>
     </div>
   </div>
 
   <div id="footer">
-    <div><a href="/html/home.html">Home</a> 
-    </div>
-    <div><a href="https://horizon-tobacco-9966.codio.io/">Create</a> 
-    </div>
-    <div><a href="/html/about.html">About</a> 
-    </div>
-    <div><a href="/html/contact.html">Contact</a> 
-    </div>
-    <div><a href="/html/gallery.html">Gallery</a> 
-    </div>
-    <div><a href="https://github.com/devin12422/CTRL-SHIFT-Brushe">Github</a> 
+    <div id="footerInner">
+      <div><a href="/html/home.html">Home</a> 
+      </div>
+      <div><a href="https://horizon-tobacco-9966.codio.io/">Create</a> 
+      </div>
+      <div><a href="/html/about.html">About</a> 
+      </div>
+      <div><a href="/html/contact.html">Contact</a> 
+      </div>
+      <div><a href="/html/gallery.html">Gallery</a> 
+      </div>
+      <div><a href="https://github.com/devin12422/CTRL-SHIFT-Brushe">Github</a> 
+      </div>
     </div>
   </div>
+  <script src="/aosAnimations.js"></script>
 </body>
 
 </html>

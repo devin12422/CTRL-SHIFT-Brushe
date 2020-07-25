@@ -77,6 +77,17 @@
             500
             <input type="range" min="500" max="5000" value="1500" step="100" class="slider" id="count">5000
           </li>
+          <li>
+            <p>Background Color</p>
+            <input value="#ffffff" type="color" class="rendererColors">
+          </li>
+          <li>
+            <p>Color Pallette</p>
+            <input value="#ff0000" type="color" class="rendererColors">
+            <input value="#0000ff" type="color" class="rendererColors">
+            <input value="#000000" type="color" class="rendererColors">
+            <input value="#00ff00" type="color" class="rendererColors">
+          </li>
         </div>
         <div>
           <p>Upload a photo to see what it would be like if it was repainted.</p>
@@ -85,21 +96,24 @@
         </div>
       </div>
     </form>
+    <img id="imagePreview" src="/images/CBK.jpg" alt="">
   </div>
-  <img id="imagePreview" src="" alt="">
+
   <canvas id="brusheCanvas" class="noselect"></canvas>
   <div id="footer">
-    <div><a href="/html/home.html">Home</a> 
-    </div>
-    <div><a href="https://horizon-tobacco-9966.codio.io/">Create</a> 
-    </div>
-    <div><a href="/html/about.html">About</a> 
-    </div>
-    <div><a href="/html/contact.html">Contact</a> 
-    </div>
-    <div><a href="/html/gallery.html">Gallery</a> 
-    </div>
-    <div><a href="https://github.com/devin12422/CTRL-SHIFT-Brushe">Github</a> 
+    <div id="footerInner">
+      <div><a href="/html/home.html">Home</a> 
+      </div>
+      <div><a href="https://horizon-tobacco-9966.codio.io/">Create</a> 
+      </div>
+      <div><a href="/html/about.html">About</a> 
+      </div>
+      <div><a href="/html/contact.html">Contact</a> 
+      </div>
+      <div><a href="/html/gallery.html">Gallery</a> 
+      </div>
+      <div><a href="https://github.com/devin12422/CTRL-SHIFT-Brushe">Github</a> 
+      </div>
     </div>
   </div>
   <script src="/bundle.js"></script>
