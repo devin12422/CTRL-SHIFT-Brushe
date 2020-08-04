@@ -9,7 +9,7 @@
   position:relative;
   text-align:center;
   width:90%;
-  height:70%;
+  height:80%;
   background-color:whitesmoke;
   padding:8px;
   border:solid #76b852;
@@ -41,7 +41,9 @@
   text-align:center;
 }
 #homeDesc img {
-  width:80%;
+  width:40vw;
+  height:40vh;
+  object-fit:cover;
   border-radius:8px;
   margin:8px;
 }
