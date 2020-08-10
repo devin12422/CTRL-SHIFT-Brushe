@@ -53,7 +53,7 @@ function reload (config) {
   canvas.width = opts.width * pixelRatio;
   canvas.height = opts.height * pixelRatio;
   canvas.style.marginBottom = "10vh";
-  seedText.textContent = opts.seedName;
+//   seedText.textContent = opts.seedName;
   background.onload = () => {
     var renderer = createRenderer(opts);
 

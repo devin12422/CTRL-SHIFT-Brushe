@@ -14,17 +14,17 @@ module.exports = function(seed) {
     random: randomFunc,
     seedName: seed,
     pointilism: random(0, 0.1),
-    noiseScalar: [0.000001,valuesArray[1]],
+    noiseScalar: [0.0000001,valuesArray[1]],
     globalAlpha: 0.5,
     startArea: valuesArray[0],
-    maxRadius: random(5, 40),
+    maxRadius: valuesArray[3],
     lineStyle: 'round',
     interval: random(0.001, 0.01),
     count: valuesArray[2],//number of lines
     steps: Math.floor(random(200, 800)),//duration
     endlessBrowser: false,
     debugLuma: false,
-    backgroundScale: 1,
+    backgroundScale: valuesArray[4],
     backgroundSrc: mapSrc,
     pixelRatio: 1,
     width: 1280 * 2,
@@ -49,7 +49,8 @@ module.exports = function(seed) {
     newValueArray.push(document.getElementById("startArea").value);
     newValueArray.push(document.getElementById("scale").value);
     newValueArray.push(document.getElementById("count").value);
-    console.log(newValueArray);
+    newValueArray.push(document.getElementById("brushSize").value);
+    newValueArray.push(document.getElementById("zoom").value);
     return newValueArray;
   }
 };
