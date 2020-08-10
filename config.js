@@ -24,7 +24,7 @@ module.exports = function(seed) {
     steps: Math.floor(random(200, 800)),//duration
     endlessBrowser: false,
     debugLuma: false,
-    backgroundScale: valuesArray[4],
+    backgroundScale: 1,
     backgroundSrc: mapSrc,
     pixelRatio: 1,
     width: 1280 * 2,
