@@ -1,4 +1,12 @@
- input[type="file"] {
+:root {
+  --primary-color: #085078;
+  --secondary-color: #fdbb2d;
+  --tertiary-color: #303841;
+  --quaternary-color: #4cbb17;
+  --quinary-color: #fff8e6;
+  --background-color: #E0E5EC;
+}
+input[type="file"] {
   display:none;
 }
 input[type="submit"] {
@@ -31,7 +39,7 @@ input[type="submit"] {
   color: #255C69;
   font-weight: 200;
   width:25vw;
-  background-color:#E0E5EC;
+  background-color:var(--background-color);
   margin-bottom:5vh;
   display:inline-block;
   box-shadow: 9px 9px 16px #A3B1C6, -9px -9px 16px #FFFFFF;

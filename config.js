@@ -50,7 +50,6 @@ module.exports = function(seed) {
     newValueArray.push(document.getElementById("scale").value);
     newValueArray.push(document.getElementById("count").value);
     newValueArray.push(document.getElementById("brushSize").value);
-    newValueArray.push(document.getElementById("zoom").value);
     return newValueArray;
   }
 };

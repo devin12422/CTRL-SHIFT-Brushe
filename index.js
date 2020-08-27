@@ -5,12 +5,27 @@ function moreOpening() {
   if(open % 2 == 0) {
     var i;
     for(i = 0; i < document.getElementsByClassName("extendedNav").length; i++) {
-      document.getElementsByClassName("extendedNav")[i].style.display = "none";
+      var iWidth = i * 48 * -1;
+      document.getElementsByClassName("extendedNav")[i].style.display = "inline-flex";
+      var translateString = 'translate(' + iWidth + 'px,0px)';
+      document.getElementsByClassName("extendedNav")[i].style.opacity = 0;
+      document.getElementsByClassName("extendedNav")[i].style.transform = translateString;
     }
+    var displayNone = setTimeout(function() {
+      for(i = 0; i < document.getElementsByClassName("extendedNav").length; i++) {
+        document.getElementsByClassName("extendedNav")[i].style.display = "none";
+        document.getElementById("nav").style.width = "3.4vw";
+        console.log("dsgfd");
+      }
+    }, 500);
   } else {
+    clearTimeout(displayNone);
     var i;
+    document.getElementById("nav").style.width = "22.4vw";
     for(i = 0; i < document.getElementsByClassName("extendedNav").length; i++) {
-      document.getElementsByClassName("extendedNav")[i].style.display = "initial";
+      document.getElementsByClassName("extendedNav")[i].style.display = "inline-flex";
+      document.getElementsByClassName("extendedNav")[i].style.opacity = 1;
+      document.getElementsByClassName("extendedNav")[i].style.transform = 'translate(0px,0px)';
     }
   }
 }
