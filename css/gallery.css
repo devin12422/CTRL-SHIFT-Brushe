@@ -74,12 +74,10 @@
  }
  .beforeSlide {
    display:none;
-   position:relative;
    animation:animatebottom 0.4s;
  }
  .afterSlide {
    display:none;
-   position:relative;
    animation:animatetop 0.4s;
  }
  @keyframes animatetop {

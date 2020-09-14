@@ -2,7 +2,6 @@
    width: 80vw;
    height: 75vh;
    z-index:2;
-   position:relative;
    background:linear-gradient(-34deg, #4BC0C8, #C779D0, #FEAC5E);
    animation: gradient 15s ease infinite;
    margin-top: 10vh;

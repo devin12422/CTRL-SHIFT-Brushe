@@ -14,7 +14,6 @@
 #homeDescContainer{
   margin-top:5vh;
   border-radius:8px;
-  position:relative;
   text-align:center;
   width:90%;
   height:80%;
@@ -32,7 +31,6 @@
 }
 #comparison{
   display:inline-grid;
-  width:100%;
   height:50vh;
   grid-template-columns:50% 50%;
 }
@@ -42,13 +40,7 @@
   display:inline-block;
   margin:8px;
 }
-#landing {
-  height:100vh;
-  width:100%;
-  display:inline-block;
-  text-align:left;
-}
-#homeDesc img {
+#comparison img {
   width:40vw;
   height:40vh;
   object-fit:cover;
@@ -71,9 +63,8 @@
   margin-top:10vh;
   text-align:left;
   border-radius:16px 0px 0px 0px;
-  padding-top:32px;
   vertical-align:middle;
-  height:70vh;
+  height:80vh;
   background:linear-gradient(#085078, #85D8CE);
 }
 #landingMain h3 {
@@ -96,6 +87,13 @@
   font-family:'Permanent Marker', cursive;
   color:var(--background-color);
   display:inline-block;
+}
+#comparisonContainer{
+  width:90vw;
+  bottom:4px;
+  float:right;
+  height:80vh;
+  background-color:var(--quinary-color);
 }
 #cta {
   height:60vh;
@@ -201,7 +199,7 @@
 canvas {
   width:90vw;
   height:10vh;
-  border-radius:0px 0px 0px 16px;
+/*   border-radius:0px 0px 0px 16px; */
 }
 .bg-bubbles {
   position: absolute;
@@ -229,60 +227,57 @@ canvas {
   left: 20%;
   width: 80px;
   height: 80px;
-  animation-delay: 0s;
-  animation-duration: 6s;
+  animation-duration: 5s;
 }
 .bg-bubbles li:nth-child(3) {
   left: 25%;
-  animation-delay: 0.2s;
+  animation-duration:4s;
 }
 .bg-bubbles li:nth-child(4) {
   left: 40%;
   width: 60px;
   height: 60px;
-  animation-duration: 8s;
+  animation-duration: 7s;
   background-color: rgba(224, 229, 236, 0.25);
 }
 .bg-bubbles li:nth-child(5) {
   left: 70%;
+  animation-delay:0.2s;
 }
 .bg-bubbles li:nth-child(6) {
   left: 75%;
+  animation-delay:2s;
   width: 120px;
   height: 120px;
-  animation-delay: 2s;
   background-color: rgba(224, 229, 236, 0.2);
 }
 .bg-bubbles li:nth-child(7) {
   left: 32%;
   width: 160px;
   height: 160px;
-  animation-delay: 3s;
 }
 .bg-bubbles li:nth-child(8) {
   left: 55%;
   width: 20px;
   height: 20px;
-  animation-delay: 0.1s;
-  animation-duration: 10s;
+  animation-duration: 8s;
 }
 .bg-bubbles li:nth-child(9) {
   left: 25%;
   width: 10px;
   height: 10px;
-  animation-delay: 2s;
-  animation-duration: 6s;
+  animation-duration: 3s;
   background-color: rgba(224, 229, 236, 0.3);
 }
 .bg-bubbles li:nth-child(10) {
   left: 90%;
   width: 90px;
+  animation-duration:7.3s;
   height: 90px;
-  animation-delay: 0.5s;
 }
 @keyframes square {
   0% {
-    transform: translateY(-20vh);
+    transform: translateY(10vh);
   }
   100% {
     transform: translateY(-90vh) rotate(720deg);

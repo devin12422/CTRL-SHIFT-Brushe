@@ -15,7 +15,6 @@ function moreOpening() {
       for(i = 0; i < document.getElementsByClassName("extendedNav").length; i++) {
         document.getElementsByClassName("extendedNav")[i].style.display = "none";
         document.getElementById("nav").style.width = "3.4vw";
-        console.log("dsgfd");
       }
     }, 500);
   } else {

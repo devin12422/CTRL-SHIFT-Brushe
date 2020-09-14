@@ -1,7 +1,7 @@
 var seedRandom = require('seed-random');
 var createRandomRange = require('./lib/random-range');
 var imageBase;
-var mapSrc = 'images/CBK.jpg';
+var mapSrc = 'images/CBK.png';
 module.exports = function(seed) {
   if(typeof seed === 'undefined') {
     seed = String(Math.floor(Math.random() * 1000000));

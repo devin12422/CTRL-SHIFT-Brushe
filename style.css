@@ -3,6 +3,7 @@
  @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
  :root {
   --primary-color: #085078;
+  /*     #0D345B*/
   --secondary-color: #fdbb2d;
   --tertiary-color: #303841;
   --quaternary-color: #4cbb17;
@@ -26,6 +27,12 @@ body {
   /*   overflow:show; */
   text-align:center;
 }
+#landing {
+  height:100vh;
+  width:100%;
+  display:inline-block;
+  text-align:center;
+}
 h2 {
   color:var(--primary-color);
 }
@@ -37,6 +44,7 @@ p {
 }
 div {
   z-index:2;
+  position:relative;
   display:inline-block;
 }
 ::-webkit-scrollbar {
@@ -181,7 +189,7 @@ div {
   display:none;
 }
 #nav {
-  position:relative;
+  position:absolute;
   z-index:3;
   text-align:center;
   top:1vh;
@@ -205,7 +213,6 @@ div {
 /*   float:left; */
   padding-top:4px;
   justify-content:center;
-  position:relative;
   height:6vh;
   width:3.4vw;
   transition:0.5s;
