@@ -26,15 +26,13 @@ function submitBrushe(event){
   randomize(event);``
 }
 function change(event){
-
+  //file upload code from stackoverflow
   const file = fileUpload.files[0];
   const reader = new FileReader();
-
   reader.addEventListener("load", function () {
     imagePreview.src = reader.result;
     imageSrc = reader.result;
   }, false);
-
   if (file) {
     reader.readAsDataURL(file);
   }
@@ -44,7 +42,6 @@ fileUpload.addEventListener('change', change);
 function reload (config) {
   loop.removeAllListeners('tick');
   loop.stop();
-
   var opts = assign({
     backgroundImage: background,
     context: context
@@ -56,7 +53,6 @@ function reload (config) {
 //   seedText.textContent = opts.seedName;
   background.onload = () => {
     var renderer = createRenderer(opts);
-
     if (opts.debugLuma) {
       renderer.debugLuma();
     } else {
@@ -85,7 +81,6 @@ function letterbox (element, parent) {
   var aspect = element.width / element.height;
   var pwidth = parent[0]*.85;
   var pheight = parent[1];
-
   var width = pwidth;
   var height = Math.round(width / aspect);
   var y = Math.floor(pheight - height) / 2;

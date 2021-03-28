@@ -48,7 +48,7 @@ div {
   display:inline-block;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
   background-color:rgba(0, 0, 0, 0.15);
@@ -210,14 +210,14 @@ div {
   transition:0.5s;
   text-align:center;
   padding-bottom:4px;
-/*   float:left; */
+  /*   float:left; */
   padding-top:4px;
   justify-content:center;
   height:6vh;
   width:3.4vw;
   transition:0.5s;
 }
-.navBlock a{
+.navBlock a {
   height:100%;
   display:flex;
   align-items: center;
