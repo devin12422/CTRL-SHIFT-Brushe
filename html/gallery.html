@@ -2,109 +2,60 @@
 <html>
 
 <head>
-  <link rel="icon" href="/images/brushIcon.png">
-  <title>Brushe</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/css/gallery.css">
-  <script src="/index.js"></script>
+    <link rel="icon" href="/images/brushIcon.png">
+    <title>Brushe</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/gallery.css">
 </head>
 
 <body>
-
-  <div id="landing">
-    <div id="nav">
-      <div class="navBlock" id="moreNav" onClick="moreOpening();">
-        <a href="#">
-          <img src="/images/burgerIcon.png" alt="">
-        </a>
-      </div>
-      <div class="navBlock extendedNav">
-        <a href="/html/home.html">
-          <img src="/images/homeIcon.png" alt="">
-        </a>
-      </div>
-      <div class="navBlock extendedNav">
-        <a href="https://horizon-tobacco-9966.codio.io/">
-          <img src="/images/brushIcon.png" alt="">
-        </a>
-      </div>
-      <div class="navBlock extendedNav">
-        <a href="/html/about.html">
-          <img src="/images/infoIcon.png" alt="">
-        </a>
-      </div>
-      <div class="navBlock extendedNav">
-        <a href="/html/contact.html">
-          <img src="/images/contactIcon.png" alt="">
-        </a>
-      </div>
-      <div class="navBlock extendedNav">
-        <a href="/html/gallery.html">
-          <img src="/images/galleryIcon.png" alt="">
-        </a>
-      </div>
+    <div id="phone">
+        <div id="notch">
+        </div>
+        <div id="apps">
+            <a href="https://horizon-tobacco-9966.codio.io/">
+                <div><img src="/images/brushIcon.png" alt=""></div>
+            </a>
+            <a href="/html/home.html">
+                <div><img src="/images/homeIcon.png" alt=""></div>
+            </a>
+            <a href="/html/gallery.html">
+                <div><img src="/images/galleryIcon.png" alt=""></div>
+            </a>
+            <a href="/html/about.html">
+                <div><img src="/images/infoIcon.png" alt=""></div>
+            </a>
+        </div>
     </div>
-    <div id="galleryContainer">
-      <div id="before" class="imageSlideShow">
-        <h2>Before</h2>
-        <img onload="carousel(0)" src="/maps/architecture.jpg" class="beforeSlide" alt="">
-
-        <img src="/maps/fractal1.jpg" class="beforeSlide" alt="">
-        <img src="/maps/scifi.jpg" class="beforeSlide" alt="">
-        <img src="/maps/eye.jpg" class="beforeSlide" alt="">
-        <img src="/maps/architecture.jpg" class="beforeSlide" alt="">
-        <img src="/maps/city5.jpg" class="beforeSlide" alt="">
-        <img src="/maps/nature1.jpg" class="beforeSlide" alt="">
-        <img src="/maps/fractal1.jpg" class="beforeSlide" alt="">
-        <img src="/maps/sym3.jpg" class="beforeSlide" alt="">
-        <img src="/maps/pat1.jpg" class="beforeSlide" alt="">
-        <img src="/maps/architecture.jpg" class="beforeSlide" alt="">
-        <img src="/maps/city2.jpg" class="beforeSlide" alt="">
-        <img src="/maps/sym6.jpg" class="beforeSlide" alt="">
-      </div>
-      <div id="after" class="imageSlideShow">
-        <h2>After</h2>
-        <img onload="carousel(0)" src="/images/gallery/apartment1.png" class="afterSlide" alt="">
-        <img src="/images/gallery/picture1.png" class="afterSlide" alt="">
-        <img src="/images/gallery/picture2.png" class="afterSlide" alt="">
-        <img src="/images/gallery/picture3.png" class="afterSlide" alt="">
-        <img src="/images/gallery/apartment3.png" class="afterSlide" alt="">
-        <img src="/images/gallery/picture4.png" class="afterSlide" alt="">
-        <img src="/images/gallery/picture5.png" class="afterSlide" alt="">
-        <img src="/images/gallery/picture7.png" class="afterSlide" alt="">
-        <img src="/images/gallery/picture8.png" class="afterSlide" alt="">
-        <img src="/images/gallery/picture9.png" class="afterSlide" alt="">
-        <img src="/images/gallery/apartment2.png" class="afterSlide" alt="">
-        <img src="/images/gallery/picture10.png" class="afterSlide" alt="">
-        <img src="/images/gallery/picture11.png" class="afterSlide" alt="">
-      </div>
-      <button class="slideShowButton" onClick="carousel(-1)">
-        <img class="galleryArrows" src="/images/leftArrow.png" alt="">
-      </button>
-      <button class="slideShowButton" onClick="carousel(1)">
-        <img class="galleryArrows" src="/images/rightArrow.png" alt="">
-      </button>
-      <div id="createNow">
-        <button>Add Your Own</button>
-      </div>
+    <div id="desk">
+        <div id="films">
+            <div class="filmStrip">
+                <img src="/images/dog.png" alt="">
+                <img src="/images/cbkLogo.png" alt="">
+                <img src="/images/temple.png" alt="">
+                <img src="/images/cameraMan.png" alt="">
+            </div>
+            <div class="filmStrip">
+                <img src="/images/camera.png" alt="">
+                <img src="/images/standing.png" alt="">
+                <img src="/images/car.png" alt="">
+                <img src="/images/guy.png" alt="">
+            </div>
+            <div class="filmStrip">
+                <img src="/images/girl.png" alt="">
+                <img src="/images/cash.png" alt="">
+                <img src="/images/money.png" alt="">
+                <img src="/images/apple.png" alt="">
+            </div>
+            <div class="filmStrip">
+                <img src="/images/motorcycle.png" alt="">
+                <img src="/images/flowers.png" alt="">
+                <img src="/images/tree.png" alt="">
+                <img src="/images/park.png" alt="">
+            </div>
+            
+        </div>
     </div>
-  </div>
-  <div id="footer">
-    <div id="footerInner">
-      <div><a href="/html/home.html">Home</a> 
-      </div>
-      <div><a href="https://horizon-tobacco-9966.codio.io/">Create</a> 
-      </div>
-      <div><a href="/html/about.html">About</a> 
-      </div>
-      <div><a href="/html/contact.html">Contact</a> 
-      </div>
-      <div><a href="/html/gallery.html">Gallery</a> 
-      </div>
-      <div><a href="https://github.com/devin12422/CTRL-SHIFT-Brushe">Github</a> 
-      </div>
-    </div>
-  </div>
 </body>
 
 </html>

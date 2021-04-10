@@ -2,136 +2,133 @@
 <html>
 
 <head>
-  <link rel="icon" href="/images/brushIcon.png">
-  <title>Brushe</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/css/home.css">
-  <link rel="stylesheet" href="/aos.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
-  <script src="/index.js"></script>
-  <script src="/aos.js"></script>
+    <link rel="icon" href="/images/brushIcon.png">
+    <title>Brushe</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+    
+    <script src="/aos.js"></script>
 </head>
 
 <body>
-  <div id="landing">
-    <div id="nav">
-      <div class="navBlock" id="moreNav" onClick="moreOpening();">
-        <a href="#">
-          <img src="/images/burgerIcon.png" alt="">
-        </a>
-      </div>
-      <div class="navBlock extendedNav">
-        <a href="/html/home.html">
-          <img src="/images/homeIcon.png" alt="">
-        </a>
-      </div>
-      <div class="navBlock extendedNav">
-        <a href="https://horizon-tobacco-9966.codio.io/">
-          <img src="/images/brushIcon.png" alt="">
-        </a>
-      </div>
-      <div class="navBlock extendedNav">
-        <a href="/html/about.html">
-          <img src="/images/infoIcon.png" alt="">
-        </a>
-      </div>
-      <div class="navBlock extendedNav">
-        <a href="/html/contact.html">
-          <img src="/images/contactIcon.png" alt="">
-        </a>
-      </div>
-      <div class="navBlock extendedNav">
-        <a href="/html/gallery.html">
-          <img src="/images/galleryIcon.png" alt="">
-        </a>
-      </div>
+    <div id="desk">
     </div>
-    <div id="landingMain">
-      <div>
-        <ul class="bg-bubbles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <h1>Brushe</h1>
-        <br>
-        <h3>Randomly generated art</h3>
-      </div>
-
-      <canvas id="waves"></canvas>
-    </div>
-  </div>
-  <div id="comparisonContainer">
-    <h1>It's not rocket science, it's computer science</h1>
-    <div id="comparison">
-      <img src="/images/CBK.png">
-      <img src="/images/CBKalt.png">
-    </div>
-    <p>You can put any picture in, and</p>
-  </div>
-  <div id="cta">
-    <div id="ctaGrid">
-      <div class="materialBlockRow">
-        <div data-aos="fromLeft" class="materialBlock">
-          <h1>Abstract Art is</h1>
+    <div id="deskEdge"></div>
+    <div id="phone">
+        <div id="notch">
         </div>
-        <div data-aos="fromRight" class="materialBlock"></div>
-      </div>
-      <div class="materialBlockRow">
-        <div data-aos="fromLeft" class="materialBlock"></div>
-        <div data-aos="fromRight" class="materialBlock">
-          <p>Art that doesn't represent reality, but seeks to copy it using shapes, forms, colors, and textures. Abstract art uses visual language of shape, form, color and line to create a piece which exists with a independence from the world.</p>
+        <div id="apps">
+            <a href="https://horizon-tobacco-9966.codio.io/">
+                <div><img src="/images/brushIcon.png" alt=""></div>
+            </a>
+            <a href="/html/home.html">
+                <div><img src="/images/homeIcon.png" alt=""></div>
+            </a>
+            <a href="/html/gallery.html">
+                <div><img src="/images/galleryIcon.png" alt=""></div>
+            </a>
+            <a href="/html/about.html">
+                <div><img src="/images/infoIcon.png" alt=""></div>
+            </a>
         </div>
-      </div>
-      <div class="materialBlockRow">
-        <div data-aos="fromBottom" class="materialBlock">
-          <a href="https://horizon-tobacco-9966.codio.io/">
-            <button>
-              Make Your Own Masterpiece
-            </button>
-          </a>
+    </div>
+    <div id="board">
+        <div class="sticky">
+            <div class="stickyShadow"> </div>
+            <div class="stickyInner">
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                            <path d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0" stroke-linejoin="round" stroke-linecap="square" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h1>Brushe</h1>
+                <p>Generative impressionism written in node.js. This website allows you to have a bit of fun with art and no effort needed.</p>
+            </div>
         </div>
-      </div>
+        <div class="sticky">
+            <div class="stickyShadow"></div>
+            <div class="stickyInner">
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                            <path d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0" stroke-linejoin="round" stroke-linecap="square" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p>The script detects contrast, and the lines gravitate to areas with higher contrast.</p>
+            </div>
+        </div>
+        <div class="sticky">
+            <div class="stickyShadow"></div>
+            <div class="stickyInner">
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                            <path d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0" stroke-linejoin="round" stroke-linecap="square" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p>This means the more different the border between two colors are, the more it will get drawn</p>
+            </div>
+        </div>
+        <div class="sticky">
+            <div class="stickyShadow"></div>
+            <div class="stickyInner">
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                            <path d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0" stroke-linejoin="round" stroke-linecap="square" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p>So a picture with more different colors will get drawn in more detail.</p>
+            </div>
+        </div>
+        <div class="sticky">
+            <div class="stickyShadow"></div>
+            <div class="stickyInner">
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                            <path d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0" stroke-linejoin="round" stroke-linecap="square" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p>Here are a few pictures done. You can see the gallery for more.</p>
+            </div>
+        </div>
+        <div class="sticky" id="photo1">
+            <div class="stickyShadow"> </div>
+            <div class="stickyInner">
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                            <path d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0" stroke-linejoin="round" stroke-linecap="square" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <img src="/images/dog.png" alt="">
+            </div>
+        </div>
+        <div class="sticky" id="photo2">
+            <div class="stickyShadow"> </div>
+            <div class="stickyInner">
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                            <path d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0" stroke-linejoin="round" stroke-linecap="square" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <img src="/images/cbkLogo.png" alt="">
+            </div>
+        </div>
     </div>
-  </div>
-  <div id="homeDesc">
-    <div id="homeDescContainer">
-      <div>
-        <h1>It's not rocket science, it's computer science</h1>
-        <p>With Brushe, you can easily convert photos to images that are a different form of art, which lets you get more out of your photos. All you need to do is get your image in a readable format and then upload it onto our page, where it will be rendered in real time while you watch. Not only is the end result a nice painting, the real time rendering creates a spectacle for you to watch while you wait for the final product. Whether you post them to your social media, or just want nice things to look at, you can always get more with Brushe.</p>
-      </div>
-      <div id="comparison">
-        <img src="/images/CBK.png">
-        <img src="/images/CBKalt.png">
-      </div>
-    </div>
-  </div>
-
-  <div id="footer">
-    <div id="footerInner">
-      <div><a href="/html/home.html">Home</a> 
-      </div>
-      <div><a href="https://horizon-tobacco-9966.codio.io/">Create</a> 
-      </div>
-      <div><a href="/html/about.html">About</a> 
-      </div>
-      <div><a href="/html/contact.html">Contact</a> 
-      </div>
-      <div><a href="/html/gallery.html">Gallery</a> 
-      </div>
-      <div><a href="https://github.com/devin12422/CTRL-SHIFT-Brushe">Github</a> 
-      </div>
-    </div>
-  </div>
-  <script src="/aosAnimations.js"></script>
 </body>
 
 </html>

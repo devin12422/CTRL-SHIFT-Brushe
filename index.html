@@ -2,119 +2,77 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-  <link rel="icon" href="/images/brushIcon.png">
-
-  <title>Brushe</title>
-  <link rel="stylesheet" href="https://horizon-tobacco.codio.io/style.css">
-  <link rel="stylesheet" href="https://horizon-tobacco.codio.io/css/main.css">
-  <script src="https://horizon-tobacco.codio.io/index.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oxygen:300,700' rel='stylesheet' type='text/css'>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="/images/brushIcon.png">
+    <title>Brushe</title>
+    <link rel="stylesheet" href="https://horizon-tobacco.codio.io/style.css">
+    <link rel="stylesheet" href="https://horizon-tobacco.codio.io/css/main.css">
+    <!--     <script src="https://horizon-tobacco.codio.io/index.js"></script> -->
 </head>
 
 <body>
-  <div id="nav">
-    <div class="navBlock" id="moreNav" onClick="moreOpening();">
-      <a href="#">
-        <img src="/images/burgerIcon.png" alt="">
-      </a>
-    </div>
-    <div class="navBlock extendedNav">
-      <a href="https://horizon-tobacco.codio.io/html/home.html">
-        <img src="/images/homeIcon.png" alt="">
-      </a>
-    </div>
-    <div class="navBlock extendedNav">
-      <a href="https://horizon-tobacco-9966.codio.io/">
-        <img src="/images/brushIcon.png" alt="">
-      </a>
-    </div>
-    <div class="navBlock extendedNav">
-      <a href="https://horizon-tobacco.codio.io/html/about.html">
-        <img src="/images/infoIcon.png" alt="">
-      </a>
-    </div>
-    <div class="navBlock extendedNav">
-      <a href="https://horizon-tobacco.codio.io/html/contact.html">
-        <img src="/images/contactIcon.png" alt="">
-      </a>
-    </div>
-    <div class="navBlock extendedNav">
-      <a href="https://horizon-tobacco.codio.io/html/gallery.html">
-        <img src="/images/galleryIcon.png" alt="">
-      </a>
-    </div>
-  </div>
-  <div class="seed-container">
-    <form action="javascript:;" id="brusheForm">
-      <label for="file" class="fileLabel">
-        <p class="fileLabel">Upload File</p>
-      </label>
-      <input required type="file" accept="image/*" name="image" id="file">
-      <input id="submitBrushe" type="submit">
-      <div id="formGrid">
-        <div id="formSliders">
-          <li>
-            <p>Start Area</p>
-            0.1<input type="range" min="0.10" max="5.00" value="2.00" step="0.1" class="slider" id="startArea">5
-          </li>
-          <li>
-            <p>Noise Scalar</p>
-            0.1<input type="range" min="0.00001" max="0.0015" value="0.001" step="0.000001" class="slider" id="scale">1
-          </li>
-          <li>
-            <p>Brush Size</p>
-            1<input type="range" min="1" max="30" value="5" step="1" class="slider" id="brushSize">30
-          </li>
-          <li>
-            <p>Count</p>
-            100
-            <input type="range" min="100" max="10000" value="5000" step="100" class="slider" id="count">10000
-          </li>
-          
-          <li>
-            <p>Background Color</p>
-            <input value="#ffffff" type="color" class="rendererColors">
-          </li>
-          <li>
-            <p>Color Palette</p>
-            <input value="#ff0000" type="color" class="rendererColors">
-            <input value="#0000ff" type="color" class="rendererColors">
-            <input value="#000000" type="color" class="rendererColors">
-            <input value="#00ff00" type="color" class="rendererColors">
-          </li>
+    <div id="phone">
+        <div id="notch">
         </div>
-        <div>
-          <p>Upload a photo to see what it would be like if it was repainted.</p>
-          <div>seed – <span class="seed-text">12380</span>
-          </div>
+        <div id="apps">
+            <a href="https://horizon-tobacco-9966.codio.io/">
+                <div><img src="/images/brushIcon.png" alt=""></div>
+            </a>
+            <a href="https://horizon-tobacco.codio.io/html/home.html">
+                <div><img src="/images/homeIcon.png" alt=""></div>
+            </a>
+            <a href="https://horizon-tobacco.codio.io/html/gallery.html">
+                <div><img src="/images/galleryIcon.png" alt=""></div>
+            </a>
+            <a href="https://horizon-tobacco.codio.io/html/about.html">
+                <div><img src="/images/infoIcon.png" alt=""></div>
+            </a>
         </div>
-      </div>
-    </form>
-    <img id="imagePreview" src="/images/CBK.jpg" alt="">
-  </div>
-
-  <canvas id="brusheCanvas" class="noselect"></canvas>
-  <div id="footer">
-    <div id="footerInner">
-      <div><a href="/html/home.html">Home</a> 
-      </div>
-      <div><a href="https://horizon-tobacco-9966.codio.io/">Create</a> 
-      </div>
-      <div><a href="/html/about.html">About</a> 
-      </div>
-      <div><a href="/html/contact.html">Contact</a> 
-      </div>
-      <div><a href="/html/gallery.html">Gallery</a> 
-      </div>
-      <div><a href="https://github.com/devin12422/CTRL-SHIFT-Brushe">Github</a> 
-      </div>
     </div>
-  </div>
-  <script src="/bundle.js"></script>
-  <script src="/config.js"></script>
+    <div id="laptop">
+        <div id="laptopScreen">
+            <div id="laptopScreenEdge">
+                <div>
+                </div>
+                <canvas id="brusheCanvas"></canvas>
+                <h5>MacBook Air</h5>
+            </div>
+        </div>
+        <div id="laptopKeyboard">
+            <form action="javascript:;" id="brusheForm">
+                <div id="keyContainer">
+                    <div class="speakers">
+                    </div>
+                    <div id="keys">
+                        <div id="touchBar">
+                            <input value="#04405a" type="color" id="backgroundColor">
+                            <div id="HSLsliders">
+                                <input type="range" min="0" max="360" value="1" class="slider" id="colorHueSlider">
+                                <input type="range" min="0" max="100" value="50" class="slider" id="colorSatSlider">
+                                <input type="range" min="0" max="100" value="100" class="slider" id="colorLightSlider">
+                            </div>
+                            <div id="HSLpreview">
+                            </div>
+                        </div>
+                        <div id="uploadKey">
+                            <label for="file" id="fileLabel">
+                                <h2>Upload</h2>
+                            </label>
+                            <input type="file" accept="image/*" name="image" id="file">
+                        </div>
+                    </div>
+                    <div class="speakers">
+                    </div>
+                </div>
+                <input id="submitBrushe" type="submit">
+            </form>
+        </div>
+        <div id="laptopBottom"></div>
+    </div>
+    <div id="desk"></div>
+    <script src="/config.js"></script>
+    <script src="/bundle.js"></script>
 </body>
 
 </html>
