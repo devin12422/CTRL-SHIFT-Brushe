@@ -18,7 +18,6 @@ randomize();
 
 function submitBrushe(event) {
     randomize(event);
-    ``
 }
 
 function change(event) {
